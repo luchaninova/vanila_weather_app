@@ -10,14 +10,52 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/e9f39105b7.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <title>Weather upp</title>
   </head>
 
   <body>
     <div class="container">
-      <h1>Hello world</h1>
-    </div>
+      <section class="current-weather-section">
+        <h1>London</h1> 
+        <div class="current-city">
+          <div class="row">
+            <div class="col-4">
+              <p class="current-city-details">
+                <span id="current-city-details-time"> Friday 16:29 </span>
+                <br />
+                <span id="current-city-details-weather">Clear sky</span>
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="current-city-details">
+                <i class="fa-solid fa-cloud-sun current-city-details-icon"></i>
+                <span
+                  class="current-city-details-temperature"
+                  id="current-city-details-temperature"
+                >19</span>
+                <span class="current-city-details-units">
+                  <a href="#" id="current-city-details-celsius-link">°C</a> |
+                  <a href="#" id="current-city-details-fahrenheit-link">°F</a>
+                </span>
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="current-city-details">
+                Humidity: <span id="current-city-details-humidity">80</span>%
+                <br />
+                Wind: <span id="current-city-details-wind-speed">4</span>km/h
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      
     <script src="src/app.js"></script>
   </body>
 </html>
