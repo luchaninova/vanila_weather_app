@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/e9f39105b7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather upp</title>
   </head>
@@ -21,7 +22,7 @@
   <body>
     <div class="container">
       <section class="current-weather-section">
-        <h1>London</h1> 
+        <h1>London</h1>
         <div class="current-city">
           <div class="row">
             <div class="col-4">
@@ -37,7 +38,8 @@
                 <span
                   class="current-city-details-temperature"
                   id="current-city-details-temperature"
-                >19</span>
+                  >19</span
+                >
                 <span class="current-city-details-units">
                   <a href="#" id="current-city-details-celsius-link">°C</a> |
                   <a href="#" id="current-city-details-fahrenheit-link">°F</a>
@@ -53,9 +55,8 @@
             </div>
           </div>
         </div>
-      </div>
       </section>
-      
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>
