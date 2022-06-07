@@ -41,26 +41,21 @@ body {
 
 h1 {
   color: #272343;
-  margin: 20px 0;
+  margin-top: 20px;
   line-height: 48px;
   font-weight: 700;
   font-size: 38px;
 }
 
 .wrapper {
-  margin-top: 50px;
   max-width: 1000px;
   background: #fff;
+  border: 1px solid rgb(65 50 100 / 8%);
   border-radius: 10px;
   box-shadow: 0 20px 30px rgb(65 50 100 / 8%);
   padding: 40px;
   color: #272343;
   margin: 30px auto;
-}
-
-.current-city-details-icon {
-  font-size: 40px;
-  margin-right: 10px;
 }
 
 .current-city-details-temperature {
