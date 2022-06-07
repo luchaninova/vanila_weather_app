@@ -1,3 +1,26 @@
+function formatedDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednsday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
+}
+
 function getCurrentWeather(response) {
   document.querySelector("#current-city-details-weather").innerHTML =
     response.data.weather[0].main;
@@ -8,6 +31,10 @@ function getCurrentWeather(response) {
   document.querySelector("#current-city-details-wind-speed").innerHTML =
     Math.round(response.data.wind.speed);
   document.querySelector("h1").innerHTML = `${response.data.name}`;
+  document.querySelector("#current-city-details-time").innerHTML = formatedDate(
+    response.data.dt * 1000
+  );
+  console.log(response);
 }
 
 // function searchCity(cityValue) {  }
