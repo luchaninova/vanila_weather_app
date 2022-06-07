@@ -45,9 +45,20 @@ function getCurrentWeather(response) {
     .setAttribute("alt", response.data.weather[0].description);
 }
 
-// function searchCity(cityValue) {  }
+function searchCity(cityValue) {
+  let apiKey = `bb88e93a86fed0c8e2a47a6a16388a81`;
+  let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}&units=metric`;
+  axios.get(apiLink).then(getCurrentWeather);
+}
 
-let apiKey = `bb88e93a86fed0c8e2a47a6a16388a81`;
-let cityValue = `Sumy`;
-let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}&units=metric`;
-axios.get(apiLink).then(getCurrentWeather);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityValue = document.querySelector("#search-city-form-value").value;
+  searchCity(cityValue);
+}
+
+document
+  .querySelector("#search-city-form")
+  .addEventListener("submit", handleSubmit);
+
+searchCity(`London`);
