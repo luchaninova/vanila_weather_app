@@ -21,41 +21,53 @@
 
   <body>
     <div class="container">
-      <section class="current-weather-section">
-        <h1>London</h1>
-        <div class="current-city">
-          <div class="row">
-            <div class="col-4">
-              <p class="current-city-details">
-                <span id="current-city-details-time"> Friday 16:29 </span>
-                <br />
-                <span id="current-city-details-weather">Clear sky</span>
-              </p>
-            </div>
-            <div class="col-4">
-              <p class="current-city-details">
-                <img src="" alt="Clear" id="current-city-details-icon" />
-                <span
-                  class="current-city-details-temperature"
-                  id="current-city-details-temperature"
-                  >19</span
-                >
-                <span class="current-city-details-units">
-                  <a href="#" id="current-city-details-celsius-link">°C</a> |
-                  <a href="#" id="current-city-details-fahrenheit-link">°F</a>
-                </span>
-              </p>
-            </div>
-            <div class="col-4">
-              <p class="current-city-details">
-                Humidity: <span id="current-city-details-humidity">80</span>%
-                <br />
-                Wind: <span id="current-city-details-wind-speed">4</span>km/h
-              </p>
+      <div class="wrapper">
+        <section class="current-weather-section">
+          <h1>London</h1>
+          <div class="current-city">
+            <div class="row">
+              <div class="col-4">
+                <p class="current-city-details">
+                  <span id="current-city-details-time"> Friday 16:29 </span>
+                  <br />
+                  <span id="current-city-details-weather">Clear sky</span>
+                </p>
+              </div>
+              <div class="col-4">
+                <div class="clearfix">
+                  <p class="current-city-details" class="float-left">
+                    <img
+                      src=""
+                      alt="Clear"
+                      id="current-city-details-icon"
+                      class="float-left"
+                    />
+                    <span
+                      class="current-city-details-temperature"
+                      id="current-city-details-temperature"
+                      >19</span
+                    >
+                    <span class="current-city-details-units">
+                      <a href="#" id="current-city-details-celsius-link">°C</a>
+                      |
+                      <a href="#" id="current-city-details-fahrenheit-link"
+                        >°F</a
+                      >
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <p class="current-city-details">
+                  Humidity: <span id="current-city-details-humidity">80</span>%
+                  <br />
+                  Wind: <span id="current-city-details-wind-speed">4</span>km/h
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

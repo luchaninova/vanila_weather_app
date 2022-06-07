@@ -47,7 +47,7 @@ h1 {
   font-size: 38px;
 }
 
-.container {
+.wrapper {
   margin-top: 50px;
   max-width: 1000px;
   background: #fff;
@@ -55,6 +55,7 @@ h1 {
   box-shadow: 0 20px 30px rgb(65 50 100 / 8%);
   padding: 40px;
   color: #272343;
+  margin: 30px auto;
 }
 
 .current-city-details-icon {

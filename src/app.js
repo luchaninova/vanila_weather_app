@@ -34,8 +34,15 @@ function getCurrentWeather(response) {
   document.querySelector("#current-city-details-time").innerHTML = formatedDate(
     response.data.dt * 1000
   );
-  document.querySelector("#current-city-details-icon").innerHTML =
-    response.data.weather[0].id;
+  document
+    .querySelector("#current-city-details-icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  document
+    .querySelector("#current-city-details-icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 
 // function searchCity(cityValue) {  }
