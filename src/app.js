@@ -34,7 +34,8 @@ function getCurrentWeather(response) {
   document.querySelector("#current-city-details-time").innerHTML = formatedDate(
     response.data.dt * 1000
   );
-  console.log(response);
+  document.querySelector("#current-city-details-icon").innerHTML =
+    response.data.weather[0].id;
 }
 
 // function searchCity(cityValue) {  }
