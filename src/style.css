@@ -58,6 +58,11 @@ h1 {
   margin: 30px auto;
 }
 
+.search-bar-form {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
 .current-city-details-temperature {
   font-size: 40px;
   font-weight: 400;
