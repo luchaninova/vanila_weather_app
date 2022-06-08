@@ -73,3 +73,13 @@ h1 {
   position: relative;
   top: -20px;
 }
+
+.current-city-details-units .active {
+  color: #272343;
+  cursor: default;
+  text-decoration: none;
+}
+
+.current-city-details-units .active:hover {
+  text-decoration: none;
+}

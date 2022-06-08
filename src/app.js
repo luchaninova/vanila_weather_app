@@ -62,23 +62,27 @@ function getFahrenheitTemp(event) {
   event.preventDefault();
   document.querySelector("#current-city-details-temperature").innerHTML =
     Math.round((celsiusTemperature * 9) / 5 + 32);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
 }
 
 function getCelsiusTemp(event) {
   event.preventDefault();
   document.querySelector("#current-city-details-temperature").innerHTML =
     Math.round(celsiusTemperature);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 document
   .querySelector("#search-city-form")
   .addEventListener("submit", handleSubmit);
 
-document
+let fahrenheitLink = document
   .querySelector("#current-city-details-fahrenheit-link")
   .addEventListener("click", getFahrenheitTemp);
 
-document
+let celsiusLink = document
   .querySelector("#current-city-details-celsius-link")
   .addEventListener("click", getCelsiusTemp);
 
