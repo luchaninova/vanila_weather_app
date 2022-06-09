@@ -58,7 +58,8 @@ h1 {
   margin: 30px auto;
 }
 
-.search-bar-form {
+.search-bar-form,
+.weather-forcast-section {
   border-bottom: 1px solid #f9f7fe;
   padding-bottom: 30px;
 }
@@ -84,6 +85,24 @@ h1 {
   text-decoration: none;
 }
 
+.weather-forcast-section,
 .link-to-github {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.weather-forcast {
+  text-align: center;
+}
+
+.weather-forcast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forcast-temp {
+  font-size: 13px;
+}
+
+.weather-forcast-temp-min {
+  opacity: 0.6;
 }
