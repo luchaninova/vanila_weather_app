@@ -83,3 +83,7 @@ h1 {
 .current-city-details-units .active:hover {
   text-decoration: none;
 }
+
+.link-to-github {
+  margin-top: 50px;
+}
