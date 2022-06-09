@@ -78,13 +78,13 @@ document
   .querySelector("#search-city-form")
   .addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document
-  .querySelector("#current-city-details-fahrenheit-link")
-  .addEventListener("click", getFahrenheitTemp);
+let fahrenheitLink = document.querySelector(
+  "#current-city-details-fahrenheit-link"
+);
+fahrenheitLink.addEventListener("click", getFahrenheitTemp);
 
-let celsiusLink = document
-  .querySelector("#current-city-details-celsius-link")
-  .addEventListener("click", getCelsiusTemp);
+let celsiusLink = document.querySelector("#current-city-details-celsius-link");
+celsiusLink.addEventListener("click", getCelsiusTemp);
 
 let celsiusTemperature = null;
 
